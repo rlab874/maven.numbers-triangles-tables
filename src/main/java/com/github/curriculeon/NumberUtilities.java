@@ -3,7 +3,15 @@ package com.github.curriculeon;
 
 public class NumberUtilities {
     public static String getEvenNumbers(int start, int stop) {
-        return null;
+
+        StringBuilder result = new StringBuilder();
+
+        for(int i = start; i < stop; i++){
+            if(i % 2 == 0){
+                result.append(i);
+            }
+        }
+        return result.toString();
     }
 
 
